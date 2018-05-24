@@ -1,4 +1,4 @@
-video { 
+video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -11,44 +11,49 @@ video {
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: no-repeat; background-size: cover;  -webkit-transition: 1s opacity; transition: 1s opacity; 
-} 
-div { 
-    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif; background: rgba(0,0,0,0); width: 33%; 
-} 
-#like {
-    float: right; 
+    background: no-repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
 }
-#like button { 
+div {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    background: rgba(0,0,0,0);
+    width: 33%;
+}
+#like {
+    float: right;
+}
+#like button {
     display: block;
     width: 100%;
     padding: .4rem;
-    border: none; 
-    margin: 1rem auto; 
+    border: none;
+    margin: 1rem auto;
     font-size: 1.3rem;
     background: rgba(255,255,255,0.23);
     color: #fff;
-    border-radius: 3px; 
+    border-radius: 3px;
     cursor: pointer;
     -webkit-transition: .3s background;
     transition: .3s background;
 }
-#like button:hover { 
+#like button:hover {
     background: rgba(0,0,0,0.5);
 }
 #dislike {
-    float: left; 
+    float: left;
 }
-#dislike button { 
+#dislike button {
     display: block;
     width: 100%;
     padding: .4rem;
-    border: none; 
-    margin: 1rem auto; 
+    border: none;
+    margin: 1rem auto;
     font-size: 1.3rem;
     background: rgba(255,255,255,0.23);
     color: #fff;
-    border-radius: 3px; 
+    border-radius: 3px;
     cursor: pointer;
     -webkit-transition: .3s background;
     transition: .3s background;
