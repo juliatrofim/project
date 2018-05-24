@@ -1,15 +1,32 @@
 var name;
+var count;
+var text1 = null;
+var text2 = null;
+
 $(document).ready(function(){
     $.getJSON('https://mediacontentaf.azurewebsites.net/api/GetSequence?UserID=1', function(data) {
-        console.log(data.Message);
         name = data.Sas;
+        text1 = data.Message;
+        var n = text1.length;
+        var i = 0;
+        while (i < n && text1[i] != '#') {
+            ++i;
+        }
+        count = 1;
+        text1 = text1.substring(0, i);
+        if (i < n) {
+            ++count;
+            text2 = data.Message;
+            text2 = text2.substring(i + 1, n);
+        }
+        document.getElementById("likebutton").childNodes[0].nodeValue = text1;
+        document.getElementById("dislikebutton").childNodes[0].nodeValue = text2;
     });
     $("#content video source").attr("src", name);
     $("#content video")[0].load();
 });
 
-
-
+/*
 function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
                                 sURLVariables = sPageURL.split('&'),
@@ -22,7 +39,7 @@ function getUrlParameter(sParam) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
         }
     }
-}
+}*/
 function onlike() {
 //    $.get( "google.com", {name: name} );
 //    console.log(name);
