@@ -21,6 +21,24 @@ $(document).ready(function(){
         }
         document.getElementById("likebutton").childNodes[0].nodeValue = text1;
         document.getElementById("dislikebutton").childNodes[0].nodeValue = text2;
+        if (data.Button === "1") {
+            document.getElementById("like").id = "like1";
+        }
+        if (data.Button === "1") {
+            document.getElementById("dislike").id = "dislike1";
+        }
+        if (data.Button === "2") {
+            document.getElementById("like").id = "like1";
+        }
+        if (data.Button === "2") {
+            document.getElementById("dislike").id = "dislike1";
+        }
+        if (data.Button === "3") {
+            document.getElementById("like").id = "like3";
+        }
+        if (data.Button === "3") {
+            document.getElementById("dislike").id = "dislike3";
+        }
     });
     $("#content video source").attr("src", name);
     $("#content video")[0].load();
