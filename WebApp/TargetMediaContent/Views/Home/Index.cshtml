@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form enctype="multipart/form-data" asp-controller="Home" method="post" asp-action="AddTMC">
+    <br>
+    <div>
+        <label for="StartDate">Date (DD.MM.YYYY)</label>
+        <br>
+        <input name="StartDate" size="11" /> —
+        <input name="EndDate" size="11" />
+    </div>
+    <br>
+    <div>
+        <label for="Gender">Gender</label>
+        <br>
+        <input type="radio" id="rb1"
+               name="Gender" value="male">
+        <label for="Gender">Male</label>
+        <br>
+        <input type="radio" id="rb2"
+               name="Gender" value="female">
+        <label for="Gender">Female</label>
+    </div>
+    <br>
+    <div>
+        <label for="StartAge">Age</label>
+        <br>
+        <input name="StartAge" size="11" /> —
+        <input name="EndAge" size="11" />
+    </div>
+    <br>
+    <div>
+        <label for="Button">ButtonStyle</label>
+        <br>
+        <input type="radio" id="rb3"
+               name="Button" value="1">
+        <label for="Button">
+            <img src="https://pp.userapi.com/c845418/v845418813/682d8/s8V-4rxx8fU.jpg" width="150" />
+        </label>
+        <br>
+        <input type="radio" id="rb4"
+               name="Button" value="2">
+        <label for="Button">
+            <img src="https://pp.userapi.com/c845418/v845418813/682df/RGraDWOJKPM.jpg" width="150" />
+        </label>
+        <br>
+        <input type="radio" id="rb5"
+               name="Button" value="3">
+        <label for="Button">
+            <img src="https://pp.userapi.com/c845418/v845418813/682e8/MDdZjrnOSA4.jpg" width="150" />
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="LikeMessage">ButtonLikeMessage</label>
+        <br>
+        <input name="LikeMessage" size="30" />
+    </div>
+    <br>
+    <div>
+        <label for="DislikeMessage">ButtonDisikeMessage</label>
+        <br>
+        <input name="DislikeMessage" size="30" />
+    </div>
+    <br>
+    <div>
+        <label for="Place">ButtonPlace</label>
+        <br>
+        <input type="radio" id="rb6"
+               name="Place" value="up">
+        <label for="Place">Up</label>
+        <br>
+        <input type="radio" id="rb7"
+               name="Place" value="down">
+        <label for="Place">Down</label>
+    </div>
+    <br>
+    <div>
+        <label for="Video">Upload Video</label>
+        <br>
+        <input name="Video" type="file">
+    </div>
+    <br>
+    <button type="submit">Add</button>
+</form>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+        asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+        asp-fallback-test="window.jQuery"
+        crossorigin="anonymous"
+        integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+</script>
+
+<script>
+    $("#testbutton").click(function () {
+        alert("Privet!");
+    });
+
+    $('#mvideo').on('ended', function () {
+        $("#mvideo").attr("src", "http://video.webmfiles.org/elephants-dream.webm");
+        $('#mvideo').get(0).play();
+    });
+</script>
+
