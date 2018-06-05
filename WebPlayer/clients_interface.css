@@ -110,7 +110,7 @@ div {
   display: inline-block;
   font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
   font-size: 1.5em;
-  width: 33%;
+  width: 100%;
   font-weight: 700;
   color: rgb(245,245,245);
   text-shadow: 0 -1px rgba(0,0,0,.1);
@@ -144,7 +144,7 @@ div {
   display: inline-block;
   font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
   font-size: 1.5em;
-  width: 33%;
+  width: 100%;
   font-weight: 700;
   color: rgb(245,245,245);
   text-shadow: 0 -1px rgba(0,0,0,.1);

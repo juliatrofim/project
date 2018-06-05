@@ -39,9 +39,9 @@ $(document).ready(function(){
         if (data.Button === "3") {
             document.getElementById("dislike").id = "dislike1";
         }
+        $("#content video source").attr("src", name);
+        $("#content video")[0].load();
     });
-    $("#content video source").attr("src", name);
-    $("#content video")[0].load();
 });
 
 /*
